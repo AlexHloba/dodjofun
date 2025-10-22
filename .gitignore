@@ -1,0 +1,98 @@
+# --- Python backend ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.log
+
+# --- Virtualenv ---
+.venv/
+env/
+venv/
+ENV/
+
+# --- Alembic ---
+alembic/__pycache__/
+alembic/*.pyc
+alembic/versions/__pycache__/
+# Если миграции нестабильные, можно игнорировать:
+# alembic/versions/*.py
+
+# --- Environment variables ---
+.env
+.env.*
+!*.template  # оставляем .env.template для примера
+
+# --- Databases / локальные данные ---
+*.db
+*.sqlite3
+instance/
+postgres_data/
+data/
+
+# --- IDE / Editors ---
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+
+# --- Docker ---
+*.pid
+*.tar
+*.bak
+docker-compose.override.yml
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- Pytest / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.cache/
+
+# --- Logs ---
+logs/
+*.log
+*.out
+*.err
+
+# --- Render ---
+render.yaml.local
+render_build.sh
+
+# --- Misc ---
+*.swp
+*.swo
+
+# =====================================================
+# === Node.js / React / Next.js frontend section ======
+# =====================================================
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+.babel_cache/
+.parcel-cache/
+.next/
+out
